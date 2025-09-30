@@ -1,0 +1,849 @@
+[
+    {
+        "id": "entry_1",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_2",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_3",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_4",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_5",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_6",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_7",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_8",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_9",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_10",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_11",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_12",
+        "instruction": "Extract named entities (persons, organizations, locations) from the sentence.",
+        "input": "Satya Nadella announced new AI features at Microsoft headquarters in Seattle.",
+        "response": {
+            "persons": [
+                "Satya Nadella"
+            ],
+            "organizations": [
+                "Microsoft"
+            ],
+            "locations": [
+                "Seattle"
+            ]
+        }
+    },
+    {
+        "id": "entry_13",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_14",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_15",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_16",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_17",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_18",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_19",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_20",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_21",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_22",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_23",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_24",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_25",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_26",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_27",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_28",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_29",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_30",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_31",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_32",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_33",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_34",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_35",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_36",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_37",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_38",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_39",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_40",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_41",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_42",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_43",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_44",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_45",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_46",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_47",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_48",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_49",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_50",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_51",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_52",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_53",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_54",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_55",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_56",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_57",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_58",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_59",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_60",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_61",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_62",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_63",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_64",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_65",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_66",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_67",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_68",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_69",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_70",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_71",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_72",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_73",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_74",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_75",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_76",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_77",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_78",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_79",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_80",
+        "instruction": "Reformat the following data as a Markdown table.",
+        "input": "Product: Laptop | Price: $1200 | Stock: 15",
+        "response": "| Product | Price | Stock |\n|---------|-------|-------|\n| Laptop  | $1200 | 15    |"
+    },
+    {
+        "id": "entry_81",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_82",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_83",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_84",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_85",
+        "instruction": "Explain why the moon causes tides on Earth in simple terms.",
+        "input": "",
+        "response": "The moon\u2019s gravity pulls on Earth\u2019s oceans, causing the water to bulge. This creates high and low tides as Earth rotates."
+    },
+    {
+        "id": "entry_86",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_87",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_88",
+        "instruction": "Extract named entities (persons, organizations, locations) from the sentence.",
+        "input": "Satya Nadella announced new AI features at Microsoft headquarters in Seattle.",
+        "response": {
+            "persons": [
+                "Satya Nadella"
+            ],
+            "organizations": [
+                "Microsoft"
+            ],
+            "locations": [
+                "Seattle"
+            ]
+        }
+    },
+    {
+        "id": "entry_89",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    },
+    {
+        "id": "entry_90",
+        "instruction": "Extract named entities (persons, organizations, locations) from the sentence.",
+        "input": "Satya Nadella announced new AI features at Microsoft headquarters in Seattle.",
+        "response": {
+            "persons": [
+                "Satya Nadella"
+            ],
+            "organizations": [
+                "Microsoft"
+            ],
+            "locations": [
+                "Seattle"
+            ]
+        }
+    },
+    {
+        "id": "entry_91",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_92",
+        "instruction": "Write a SQL query and equivalent Python Pandas code to get the maximum salary from Employees table.",
+        "input": "Schema: Employees(id, name, salary)",
+        "response": {
+            "sql": "SELECT MAX(salary) FROM Employees;",
+            "pandas": "df['salary'].max()"
+        }
+    },
+    {
+        "id": "entry_93",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_94",
+        "instruction": "Generate Python code to implement a binary search algorithm.",
+        "input": "",
+        "response": "def binary_search(arr, target):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+        "id": "entry_95",
+        "instruction": "Write a short poem about machine learning in 4 lines.",
+        "input": "",
+        "response": "Patterns in the streams,\nData whispers unseen truths,\nLearning shapes the mind,\nMachines dream with human hues."
+    },
+    {
+        "id": "entry_96",
+        "instruction": "Translate the given sentence into French, German, and Japanese.",
+        "input": "Knowledge is power, but wisdom is using it wisely.",
+        "response": {
+            "french": "Le savoir est le pouvoir, mais la sagesse consiste \u00e0 l'utiliser judicieusement.",
+            "german": "Wissen ist Macht, aber Weisheit ist, es klug zu nutzen.",
+            "japanese": "\u77e5\u8b58\u306f\u529b\u3060\u304c\u3001\u77e5\u6075\u306f\u305d\u308c\u3092\u8ce2\u304f\u4f7f\u3046\u3053\u3068\u3060\u3002"
+        }
+    },
+    {
+        "id": "entry_97",
+        "instruction": "Classify the sentiment of this review.",
+        "input": "The food was delicious, but the service was extremely slow.",
+        "response": "mixed"
+    },
+    {
+        "id": "entry_98",
+        "instruction": "Extract named entities (persons, organizations, locations) from the sentence.",
+        "input": "Satya Nadella announced new AI features at Microsoft headquarters in Seattle.",
+        "response": {
+            "persons": [
+                "Satya Nadella"
+            ],
+            "organizations": [
+                "Microsoft"
+            ],
+            "locations": [
+                "Seattle"
+            ]
+        }
+    },
+    {
+        "id": "entry_99",
+        "instruction": "Summarize the following article into 3 bullet points.",
+        "input": "AI is reshaping industries from healthcare to finance. It improves efficiency but raises ethical concerns. Governments are rushing to regulate AI applications.",
+        "response": [
+            "AI is transforming multiple industries.",
+            "Efficiency improvements come with ethical risks.",
+            "Governments are creating regulations for AI."
+        ]
+    },
+    {
+        "id": "entry_100",
+        "instruction": "Solve this math problem step by step: A car travels 60 km in 1.5 hours. What is its average speed?",
+        "input": "",
+        "response": {
+            "steps": [
+                "Distance = 60 km",
+                "Time = 1.5 hours",
+                "Speed = Distance / Time = 60 / 1.5 = 40 km/h"
+            ],
+            "final_answer": "40 km/h"
+        }
+    }
+]

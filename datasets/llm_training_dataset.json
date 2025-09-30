@@ -1,0 +1,119 @@
+[
+    {
+        "id": "c1",
+        "instruction": "Summarize the conversation and then extract all dates mentioned.",
+        "input": "User: I booked my flight for 12th October but I might postpone to 25th October.\nAgent: Okay, should I also cancel your hotel booking for 14th October?",
+        "response": {
+            "summary": "The user is considering rescheduling a flight from 12th to 25th October and has a hotel booking on 14th October.",
+            "dates": [
+                "12th October",
+                "25th October",
+                "14th October"
+            ]
+        }
+    },
+    {
+        "id": "c2",
+        "instruction": "Given this medical report, identify possible diseases and recommend next steps. Output should be structured JSON.",
+        "input": "Patient reports persistent cough, fatigue, and shortness of breath. Chest X-ray shows abnormal shadowing in the left lung.",
+        "response": {
+            "possible_diseases": [
+                "Pneumonia",
+                "Tuberculosis",
+                "Lung Cancer"
+            ],
+            "recommended_steps": [
+                "Conduct sputum test",
+                "Order CT scan",
+                "Refer to pulmonologist"
+            ]
+        }
+    },
+    {
+        "id": "c3",
+        "instruction": "Generate SQL and Python code to retrieve the top 5 customers by total purchases from the given schema: Customers(id, name), Orders(id, customer_id, amount).",
+        "input": "",
+        "response": {
+            "sql": "SELECT c.name, SUM(o.amount) as total FROM Customers c JOIN Orders o ON c.id=o.customer_id GROUP BY c.name ORDER BY total DESC LIMIT 5;",
+            "python": "import sqlite3\nconn = sqlite3.connect('shop.db')\ncur = conn.cursor()\ncur.execute('''SELECT c.name, SUM(o.amount) as total FROM Customers c JOIN Orders o ON c.id=o.customer_id GROUP BY c.name ORDER BY total DESC LIMIT 5;''')\nprint(cur.fetchall())"
+        }
+    },
+    {
+        "id": "c4",
+        "instruction": "Perform multi-step reasoning: If a train leaves London at 3 PM traveling 80 km/h, and another leaves Paris at 4 PM traveling 120 km/h towards London (450 km apart), when and where do they meet?",
+        "input": "",
+        "response": {
+            "steps": [
+                "By 4 PM, London train has traveled 80 km.",
+                "Remaining distance = 450 - 80 = 370 km.",
+                "Relative speed = 80 + 120 = 200 km/h.",
+                "Time to meet after 4 PM = 370 / 200 = 1.85 hours \u2248 1h 51m.",
+                "Meeting time \u2248 5:51 PM.",
+                "Distance from London = 80 + (80 * 1.85) \u2248 228 km."
+            ],
+            "final_answer": "They meet at approximately 5:51 PM, 228 km from London."
+        }
+    },
+    {
+        "id": "c5",
+        "instruction": "Write a persuasive product description for an AI-powered smart fridge that adjusts temperature based on stored food. Output should be in Markdown with bullet points.",
+        "input": "",
+        "response": "### AI Smart Fridge 3000\n\n- **Intelligent Temperature Control**: Adjusts cooling based on stored items.\n- **Energy Efficient**: Saves up to 30% electricity.\n- **Food Freshness Guarantee**: Extends shelf life with real-time monitoring.\n- **Mobile App Integration**: Check contents and adjust settings remotely.\n- **Eco-Friendly Design**: Built with sustainable materials."
+    },
+    {
+        "id": "c6",
+        "instruction": "Rewrite the following paragraph in Shakespearean style.",
+        "input": "Technology is advancing rapidly, bringing both great opportunities and significant risks.",
+        "response": "Lo, the wheel of progress turneth swift, bestowing boons aplenty yet bearing perils dire."
+    },
+    {
+        "id": "c7",
+        "instruction": "You are given a JSON log of web requests. Detect anomalies where the response time exceeds 2 seconds.",
+        "input": [
+            {
+                "url": "/login",
+                "response_time": 0.8
+            },
+            {
+                "url": "/checkout",
+                "response_time": 2.5
+            },
+            {
+                "url": "/products",
+                "response_time": 1.2
+            },
+            {
+                "url": "/api/data",
+                "response_time": 3.1
+            }
+        ],
+        "response": [
+            {
+                "url": "/checkout",
+                "response_time": 2.5
+            },
+            {
+                "url": "/api/data",
+                "response_time": 3.1
+            }
+        ]
+    },
+    {
+        "id": "c8",
+        "instruction": "Classify this sentence as 'fact', 'opinion', or 'false claim'.",
+        "input": "The Earth is flat and rests on four elephants.",
+        "response": "false claim"
+    },
+    {
+        "id": "c9",
+        "instruction": "Summarize the following scientific abstract in layman\u2019s terms.",
+        "input": "CRISPR-Cas9 enables targeted genome editing by introducing double-stranded breaks at specific genomic loci, revolutionizing genetic engineering.",
+        "response": "CRISPR-Cas9 is a tool that lets scientists cut and change DNA at exact spots, making genetic engineering much easier."
+    },
+    {
+        "id": "c10",
+        "instruction": "Generate Python code to scrape headlines from a news website using requests and BeautifulSoup.",
+        "input": "",
+        "response": "import requests\nfrom bs4 import BeautifulSoup\n\nurl = 'https://news.ycombinator.com/'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nheadlines = [a.text for a in soup.select('.titleline a')]\nprint(headlines)"
+    }
+]
