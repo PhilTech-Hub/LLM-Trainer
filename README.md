@@ -20,7 +20,7 @@ Imagine you want an AI that can answer your company’s FAQs, or translate text,
 Instead of using GPT-4 directly, you can fine-tune a smaller model on your dataset.
 
 🚀 **Live Demo on Hugging Face Spaces**:  
-🚀 **[👉 Try it here: LLM Trainer With JSON](https://huggingface.co/spaces/philemon-victor/llm-trainer-demo)**
+🚀 **[👉 LLM Trainer With JSON](https://huggingface.co/spaces/philemon-victor/llm-trainer-demo)**
  
 
 
