@@ -1,4 +1,4 @@
-📚 LLM Trainer with JSON
+📚 LLM Trainer with JSON 
 
 This project shows how to train a small language model (LLM) on your own dataset written in JSON format.
 
@@ -18,6 +18,10 @@ How to deploy the trained model for others to use.
 
 Imagine you want an AI that can answer your company’s FAQs, or translate text, or act as a chatbot.
 Instead of using GPT-4 directly, you can fine-tune a smaller model on your dataset.
+
+🚀 **Live Demo on Hugging Face Spaces**:  
+👉 [Try it here](https://huggingface.co/spaces/philemon-victor/llm-trainer-demo)  
+
 
 Here, we created a dataset of instruction–response pairs (questions and answers) and trained the distilgpt2 model to follow them.
 
